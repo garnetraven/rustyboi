@@ -1,4 +1,3 @@
-version: "3.9"
 services:
   rustyboi:
     build: .
@@ -7,4 +6,4 @@ services:
       - .env
     volumes:
       - .:/usr/src/rustyboi
-    command: cargo run
+    command: cargo watch -x run

@@ -2,6 +2,8 @@ FROM rust:1.91.1
 
 WORKDIR /usr/src/rustyboi
 
+RUN cargo install cargo-watch
+
 # Cache dependencies
 COPY Cargo.toml Cargo.lock ./
 RUN mkdir src && echo "fn main() {}" > src/main.rs
@@ -12,4 +14,4 @@ RUN rm -rf src
 COPY . .
 
 # Expose nothing (Discord uses outbound connections)
-CMD ["cargo", "run"]
+CMD ["cargo", "watch", "x", "run"]
