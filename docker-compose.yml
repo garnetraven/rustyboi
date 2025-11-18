@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  rustyboi:
+    build: .
+    container_name: rustyboi
+    env_file: 
+      - .env
+    volumes:
+      - .:/usr/src/rustyboi
+    command: cargo run
