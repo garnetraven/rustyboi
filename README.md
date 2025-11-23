@@ -22,8 +22,6 @@
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    &middot;
     <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
     <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
@@ -46,7 +44,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -58,46 +55,79 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
+RustyBoi is a feature-rich Discord bot designed to enhance server communities with user progression, economy systems, and detailed analytics. Built with Rust for maximum performance and reliability, it scales effortlessly for communities of 100-200+ users.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Get RustyBoi up and running in your server with these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Before you begin, ensure you have the following installed:
+
+#### For Docker Setup (Recommended)
+* Docker Desktop or Docker Engine
   ```sh
-  npm install npm@latest -g
+  # Linux
+  curl -fsSL https://get.docker.com -o get-docker.sh
+  sh get-docker.sh
+  
+  # macOS/Windows - Download Docker Desktop from docker.com
   ```
+* Docker Compose (usually included with Docker Desktop)
+
+#### For Local Development
+* Rust 1.70 or higher
+  ```sh
+  # Linux/macOS
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  source $HOME/.cargo/env
+  
+  # Windows - Download from https://rustup.rs/
+  ```
+
+* PostgreSQL 12 or higher
+  ```sh
+  # Ubuntu/Debian
+  sudo apt update
+  sudo apt install postgresql
+  
+  # macOS (Homebrew)
+  brew install postgresql@15
+  brew services start postgresql@15
+  
+  # Windows - Download from postgresql.org
+  ```
+
+* Discord Bot Token - [Create a bot application](https://discord.com/developers/applications)
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. **Clone the repository**
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/garnetraven/rustyboi.git
+   cd rustyboi
    ```
-3. Install NPM packages
+
+2. **Create environment file**
    ```sh
-   npm install
+   cp .env.example .env
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+
+3. **Configure your `.env` file**
+   ```env
+   # Discord Configuration
+   DISCORD_TOKEN=your_discord_bot_token_here
+   
+   # Database Configuration
+   DATABASE_URL=postgresql://discord_bot:secure_password@localhost/discord_bot
    ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+
+4. **Choose your setup method:**
+   - [Docker Setup](#docker-setup) (Recommended for quick start)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
