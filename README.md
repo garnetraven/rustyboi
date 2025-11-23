@@ -64,6 +64,8 @@ RustyBoi is a feature-rich Discord bot designed to enhance server communities wi
 
 Get RustyBoi up and running in your server with these simple steps.
 
+If you have a large community and or do not want to self host your bot. We offer a paid solution to host and scale for your community. Visit rustyboi.com
+
 ### Prerequisites
 
 Before you begin, ensure you have the following installed:
