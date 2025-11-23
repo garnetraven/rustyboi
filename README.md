@@ -144,4 +144,4 @@ Project Link: [https://github.com/garnetraven/rustyboi](https://github.com/garne
 [issues-shield]: https://img.shields.io/github/issues/garnetraven/rustyboi.svg?style=for-the-badge
 [issues-url]: https://github.com/garnetraven/rustyboi/issues
 [license-shield]: https://img.shields.io/github/license/garnetraven/rustyboi.svg?style=for-the-badge
-[license-url]: https://github.com/garnetraven/rustyboi/blob/master/LICENSE.txt
+[license-url]: https://github.com/garnetraven/rustyboi/blob/main/LICENSE.txt
