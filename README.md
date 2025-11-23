@@ -1,5 +1,12 @@
 <a id="readme-top"></a>
 
+<!-- Project Shields -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![project_license][license-shield]][license-url]
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -127,3 +134,14 @@ Corbin Lienau - GitHub: GarnetRaven - 13lienau@gmail.com
 Project Link: [https://github.com/garnetraven/rustyboi](https://github.com/garnetraven/rustyboi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[contributors-shield]: https://img.shields.io/github/contributors/garnetraven/rustyboi.svg?style=for-the-badge
+[contributors-url]: https://github.com/garnetraven/rustyboi/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/garnetraven/rustyboi.svg?style=for-the-badge
+[forks-url]: https://github.com/garnetraven/rustyboi/network/members
+[stars-shield]: https://img.shields.io/github/stars/garnetraven/rustyboi.svg?style=for-the-badge
+[stars-url]: https://github.com/garnetraven/rustyboi/stargazers
+[issues-shield]: https://img.shields.io/github/issues/garnetraven/rustyboi.svg?style=for-the-badge
+[issues-url]: https://github.com/garnetraven/rustyboi/issues
+[license-shield]: https://img.shields.io/github/license/garnetraven/rustyboi.svg?style=for-the-badge
+[license-url]: https://github.com/garnetraven/rustyboi/blob/master/LICENSE.txt
